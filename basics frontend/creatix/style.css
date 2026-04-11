@@ -13,7 +13,7 @@ body{
 }
 
 #header{
-    position: fixed;
+    position: absolute;
     display: flex;
     width: 100dvw;
     height: auto;
@@ -50,7 +50,56 @@ nav{
 #hero{
     background-color: var(--secondary);
     width: 100dvw;
-    height: 100dvh;
+    height: 135dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border-radius: 0 0 80px 80px;
+}
+
+#hero h1{
+    text-align: center;
+    font-size: 65px;
+}
+
+#hero .child-hero{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .child-hero img{
+    width: 400px;
+}
+
+#hero .child-hero .desk{
+    font-size: 18px;
+    color: rgb(97, 95, 95);
+}
+
+#hero .child-hero .desk a{
+    text-decoration: none;
+    color: rgb(97, 95, 95);
+    border-color: rgb(97, 95, 95);
+    border-radius: 100px;
+    /* background-color: var(--primary); */
+    border-radius: 100px;
+    padding: 0.5rem;
+    width: auto;
+    height: auto;
+}
+
+#hero .child-hero .experience .star-rating{
+    font-size: 35px;
+    color: var(--primary);
+    display: flex;
+    gap: 0;
+}
+
+#hero .child-hero .experience h3{
+    font-size: 25px;
 }
 
 #about{
